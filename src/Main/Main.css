@@ -1,0 +1,51 @@
+.mainContainer {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  min-height: 400px;
+  width: 800px;
+  padding: 30px;
+  border-radius: 10px;
+  color: #616161;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.imgPoster {
+  width: 150px;
+  height: 300px;
+}
+
+.btnContainer {
+  margin-top: 20px;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoText {
+  width: 60%;
+}
+
+.infoTextItem {
+  margin-bottom: 10px;
+}
+
+.rating {
+  background-color: #a5d6a7;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.ratingsContainer {
+  margin-bottom: 10px;
+  font-size: 20px;
+}

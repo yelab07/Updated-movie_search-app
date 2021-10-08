@@ -1,9 +1,10 @@
 .navContainer {
+  background-color: rgb(189, 9, 9);
   height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 10px 10px 30px #bebebe, -20px -20px 60px #ffffff;
+  box-shadow: 10px 10px 30px #a02a16, -20px -20px 60px #ffffff;
 }
 
 .formContainer {
@@ -18,11 +19,13 @@
   border-radius: 10px;
   border: none;
   padding: 10px;
-  color: #616161;
-  border: solid #616161;
+  color: #a02a16;
+  border: solid #1b130e;
+    box-shadow: 10px 10px 30px #a02a16, -20px -20px 60px #ca523d;
+
 }
 
-.searchBtn {
+/* .searchBtn {
   border-radius: 10px;
   font-size: 20px;
   padding: 0 10px;
@@ -30,4 +33,4 @@
   color: #616161;
   border: solid #616161;
   cursor: pointer;
-}
+} */

@@ -13,14 +13,14 @@ const Main = (props) => {
     const data=await response.json();
 
     setMovieInfo(data);
-       console.log(movieInfo);
+      //  console.log(movieInfo);
 
 
-    // setShow(true);
+    
   };
   useEffect(() => {
     selectedMovie();
-  }, []);
+  }, [movieSelected]);
   
   const imgStyles = {
     backgroundImage: `url(${movieInfo?.Poster})`,
@@ -32,7 +32,7 @@ const Main = (props) => {
 
   return (
     <div className="mainContainer">
-      {props.show && (
+      {/* {props.show && ( */}
         <div className="modalContainer">
           <div className="infoContainer">
             <div style={imgStyles}></div>
@@ -57,12 +57,16 @@ const Main = (props) => {
           </div>
 
           <div className="btnContainer">
-            <button className="searchBtn" onClick={() => props.setShow(false)}>
+            <button
+              className="searchBtn"
+              onClick={() =>props.setmovieSelected()
+}
+            >
               Close
             </button>
           </div>
         </div>
-      )}
+      {/* )} */}
     </div>
   );
 };

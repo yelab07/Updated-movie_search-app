@@ -7,7 +7,7 @@ import Nav2 from "./Nav/Nav2";
 
 function App() {
   const [searchText, setSearchText] = useState("");
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
   const [timeoutID, setTimeoutID] = useState();
   const [movieData, setMovieData] = useState({});
   const [movieSelected, setmovieSelected] = useState();
@@ -19,7 +19,7 @@ function App() {
     const data = await response.json();
     // console.log(data);
     setMovieData(data.Search);
-    setShow(true);
+    // setShow(true);
   };
   const onType = (event) => {
     setmovieSelected("");
@@ -36,8 +36,8 @@ function App() {
         <Main
           movieSelected={movieSelected}
           setmovieSelected={setmovieSelected}
-          setShow={setShow}
-          show={show}
+          // setShow={setShow}
+          // show={show}
         />
       )}
       {/* <Nav searchMovie={searchMovie} setSearchText={setSearchText} /> */}
